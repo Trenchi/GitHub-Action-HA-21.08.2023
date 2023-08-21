@@ -10,7 +10,7 @@ class TestAdd(unittest.TestCase):
         self.assertEqual(add(4, 4), 17)
 
     def text_uppercase_make_it_uppercase(self):
-        self.assertEqual(uppercase("Baum"), "123")
+        self.assertEqual(uppercase("Baum"), "BAUM")
 
 
 if __name__ == "__main__":
