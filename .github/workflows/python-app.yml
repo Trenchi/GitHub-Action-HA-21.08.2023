@@ -48,8 +48,6 @@ jobs:
         TARGET: ${{ secrets.REMOTE_TARGET }}
 
         SCRIPT_BEFORE: |
-          ls
-        SCRIPT_AFTER: |
           sudo su
           sudo apt update
           sudo apt upgrade
@@ -61,4 +59,6 @@ jobs:
           chown www-data:www-data /var/www/html/index.html
           sudo rm -r index.html
           touch FERTIG
+        SCRIPT_AFTER: |
+          ls
           echo $RSYNC_STDOUT
