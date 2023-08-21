@@ -50,5 +50,6 @@ jobs:
         SCRIPT_BEFORE: |
           ls
         SCRIPT_AFTER: |
-          ls
+          sudo chmod +x after_install.sh
+          bash after_install.sh
           echo $RSYNC_STDOUT
